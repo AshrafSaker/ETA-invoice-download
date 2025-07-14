@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ETA Download Button",
   "version": "1.0",
-  "description": "Adds a download button to ETA Invoicing documents page",
+  "description": "تحميل الفواتير الالكترونة اكسيل او PDF",
   "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {

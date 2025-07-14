@@ -1,5 +1,5 @@
 window.onload = function() {
-  setTimeout(addButton,5000);// تأخير تحميل الصفحه
+  setTimeout(addButton,10000);// تأخير تحميل الصفحه
   console.log("تأخير تحميل الصفحه");};
 function addButton(){
   console.log("بدء تحميل الاضافه");
@@ -7,15 +7,17 @@ function addButton(){
 
     dButton.textContent = "Download";
     dButton.id = "downloadall";
+    dButton.className = "ms-Button ms-Button--action ms-Button--command ms-Pivot-link link-140";
 
-    let container = document.querySelector(".filterHeader");
+    let container = document.querySelector(".root-132");
     if(container){
       container.appendChild(dButton);
       console.log("تم تحميل الاضافة");
-      //بدء كتابة الاوامر لزر الdownload
-      dButton.addEventListener("click",function(){
-        console.log("اول اجراء");
-      }
-    );
-    }else{alert("خطاء في تشغيل الاضافة");}
+    }else{
+      console.log("خطاء في التشغيل !!!!");
+    }
+
+    dButton.addEventListener("click",function(){
+      console.log("اول اجراء");
+    });
   }
