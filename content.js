@@ -105,8 +105,8 @@ tableRows.forEach(row => {
     }
 });
 console.log(data); // سترى البيانات في الكونسول
+*/
   });
 
-*/
 
 }
