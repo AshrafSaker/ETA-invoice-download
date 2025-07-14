@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "ETA Download Button",
+  "version": "1.0",
+  "description": "Adds a download button to ETA Invoicing documents page",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://invoicing.eta.gov.eg/documents*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128":"icon128.png"
+  }
+}
